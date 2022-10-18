@@ -229,7 +229,7 @@
             this.waveTabControl.Location = new System.Drawing.Point(6, 244);
             this.waveTabControl.Name = "waveTabControl";
             this.waveTabControl.SelectedIndex = 0;
-            this.waveTabControl.Size = new System.Drawing.Size(506, 260);
+            this.waveTabControl.Size = new System.Drawing.Size(506, 348);
             this.waveTabControl.TabIndex = 19;
             // 
             // MapSettingsControl
@@ -255,7 +255,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtMapRules);
             this.Name = "MapSettingsControl";
-            this.Size = new System.Drawing.Size(515, 516);
+            this.Size = new System.Drawing.Size(515, 595);
             ((System.ComponentModel.ISupportInitialize)(this.numMaxSpawnTime)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxBotPerZone)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxBosses)).EndInit();

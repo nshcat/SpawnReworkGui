@@ -68,6 +68,24 @@
     <Compile Include="Model\WaveSettings.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ui\BossEditFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ui\BossEditFrm.Designer.cs">
+      <DependentUpon>BossEditFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ui\BossSettingsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ui\BossSettingsControl.Designer.cs">
+      <DependentUpon>BossSettingsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ui\FollowerEditFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ui\FollowerEditFrm.Designer.cs">
+      <DependentUpon>FollowerEditFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ui\MainFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +98,7 @@
     <Compile Include="Ui\MapSettingsControl.Designer.cs">
       <DependentUpon>MapSettingsControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ui\Utilities.cs" />
     <Compile Include="Ui\WaveSettingsControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -95,6 +114,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Ui\BossEditFrm.resx">
+      <DependentUpon>BossEditFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ui\BossSettingsControl.resx">
+      <DependentUpon>BossSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ui\FollowerEditFrm.resx">
+      <DependentUpon>FollowerEditFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ui\MainFrm.resx">
       <DependentUpon>MainFrm.cs</DependentUpon>
     </EmbeddedResource>

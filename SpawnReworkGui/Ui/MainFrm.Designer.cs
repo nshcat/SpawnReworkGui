@@ -106,19 +106,20 @@
             this.mapTabContainer.Location = new System.Drawing.Point(0, 31);
             this.mapTabContainer.Name = "mapTabContainer";
             this.mapTabContainer.SelectedIndex = 0;
-            this.mapTabContainer.Size = new System.Drawing.Size(601, 532);
+            this.mapTabContainer.Size = new System.Drawing.Size(526, 614);
             this.mapTabContainer.TabIndex = 1;
             // 
             // MainFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(526, 563);
+            this.ClientSize = new System.Drawing.Size(526, 647);
             this.Controls.Add(this.mapTabContainer);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainFrm";
-            this.Text = "MainFrm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "LUA Spawn Rework Pattern Editor";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

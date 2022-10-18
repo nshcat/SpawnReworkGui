@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SpawnReworkGui.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -50,6 +51,10 @@ namespace SpawnReworkGui.Ui
                 {
                     control.Commit();
                 }
+                else if(page.Tag is BossSettingsControl bossControl)
+                {
+                    bossControl.Commit();
+                }
             }
         }
 
@@ -82,6 +87,17 @@ namespace SpawnReworkGui.Ui
             this.waveTabControl.TabPages.Add(page);
         }
 
+        protected void AddBossesPage()
+        {
+            var control = new BossSettingsControl(this.CurrentSettings.BossSettings);
+            control.Dock = DockStyle.Fill;
+
+            var page = new TabPage("Bosses");
+            page.Controls.Add(control);
+            page.Tag = control;
+            this.waveTabControl.TabPages.Add(page);
+        }
+
         protected void CreateWavePages()
         {
             this.waveTabControl.TabPages.Clear();
@@ -97,6 +113,8 @@ namespace SpawnReworkGui.Ui
 
             if (this.CurrentSettings.Waves.RaiderWaves != null)
                 this.AddWavePage("Raiders", this.CurrentSettings.Waves.RaiderWaves);
+
+            this.AddBossesPage();
         }
     }
 }
